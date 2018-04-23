@@ -15,7 +15,7 @@ test:
     - ./Tests/yamlvalidator
 
     # build content descriptor
-    - ./setContentDescriptor.sh $CIRCLE_BUILD_NUM 1aeecc41f4640cfca92618bbefd44698f61b9c88 18.4.12
+    - ./setContentDescriptor.sh $CIRCLE_BUILD_NUM 1aeecc41f4640cfca92618bbefd44698f61b9c88 18.4.13
 
     # create common server documentation
     - ./Docs/commonServerDocs.sh
@@ -23,4 +23,3 @@ test:
     # create content bundle
     - python content_creator.py $CIRCLE_ARTIFACTS
   override:
-
